@@ -9,7 +9,7 @@ Simple to use dynamic array.
 int main() {
     char *str1 = "hello";
     char *str2 = ", wor";
-    char *str3 = "ld!";
+    char *str3 = "ld!\n";
     
     dynArray array = dynA_init();
 
@@ -19,7 +19,7 @@ int main() {
 
     unsigned long i = 0;
     for(; i < dynA_size(array); i++) {
-        puts(dynA_get(array, i));
+        printf(dynA_get(array, i));
     }
     return 0;
 }
